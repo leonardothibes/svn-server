@@ -1,0 +1,27 @@
+{
+  "name": "leonardothibes-wget",
+  "version": "1.0.4",
+  "source": "git://github.com/leonardothibes/puppet-wget.git",
+  "author": "leonardothibes",
+  "license": "MIT",
+  "summary": "A puppet module for download files with wget",
+  "description": "A puppet module for download files with wget",
+  "project_page": "http://github.com/leonardothibes/puppet-wget",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "60b74e74ea97c3a90bb0bfbae3c1905b",
+    "LICENSE": "d143e4bd53eb50f976ee1b80131d791e",
+    "Modulefile": "08c2935b749a45e795ffb3240525835b",
+    "README.md": "a09465b3e4187091971c90b803333cf3",
+    "Vagrantfile": "09e7ba8c43e5d7a1254f68a778fcd4bf",
+    "manifests/dependencies.pp": "f1c4478fe9f71d298d096ddcc881b130",
+    "manifests/init.pp": "9ad255c74e7bc44b6e7b9def036d6a50",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "tests/init.pp": "aea806b9303630f8ad65305ef5174f10"
+  }
+}

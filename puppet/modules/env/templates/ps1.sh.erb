@@ -1,0 +1,5 @@
+if [ "`id -u`" -eq 0 ]; then
+	PS1="<%=@ps1%># "
+else
+	PS1="<%=@ps1%>$ "
+fi

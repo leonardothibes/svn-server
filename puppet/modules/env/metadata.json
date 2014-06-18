@@ -1,0 +1,32 @@
+{
+  "types": [
+
+  ],
+  "project_page": "http://github.com/leonardothibes/puppet-env",
+  "source": "git://github.com/leonardothibes/puppet-env.git",
+  "description": "A puppet module to provide a Redhat shell style for Debian/Ubuntu/Mint",
+  "license": "MIT",
+  "dependencies": [
+
+  ],
+  "summary": "A puppet module to provide a Redhat shell style for Debian/Ubuntu/Mint",
+  "author": "leonardothibes",
+  "name": "leonardothibes-env",
+  "version": "1.0.2",
+  "checksums": {
+    "manifests/init.pp": "dc359564a07b733cae9096549243eeae",
+    "manifests/skel.pp": "6b54656b3658a24a659f3e7558e403c2",
+    "CHANGELOG": "47c87bc03e1add8f360fd1d3e803d580",
+    "Modulefile": "a1c9ffff1eb51ab9bc2f6563cca26164",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "Vagrantfile": "d2ea37dfc1c3c4e2b97d7ae6ba176fe3",
+    "manifests/params.pp": "e74d79142fc448573f82c4970b969224",
+    "manifests/aliases.pp": "9c75c6543e2c6e921a77b1f34e223e38",
+    "tests/init.pp": "8816db1d1ab28a94994d0c061b319202",
+    "templates/ps1.sh.erb": "8890a2c2be1fd976403b2b06f8d2d39b",
+    "manifests/utils.pp": "10054c882d0a907586105cd6c7820340",
+    "manifests/ps1.pp": "89340239e6755aac7830adb14d56b0f0",
+    "README.md": "d5814f6e18a3bd631e3783bc95cdee7e",
+    "LICENSE": "d143e4bd53eb50f976ee1b80131d791e"
+  }
+}

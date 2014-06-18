@@ -1,0 +1,18 @@
+2014-01-14 Leonardo Thibes <eu@leonardothibes.com> - 1.0.2
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (2):
+	* Resolvendo o problema de links indevidos fora da vm #2
+	* Implementando proteção contra declaração duplicada na instalação de pacotes #3
+
+2014-01-07 Leonardo Thibes <eu@leonardothibes.com> - 1.0.1
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando a criação de links nos homes dos usuários
+
+2013-12-26 Leonardo Thibes <eu@leonardothibes.com> - 1.0.0
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando as classes do módulo

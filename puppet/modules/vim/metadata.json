@@ -1,0 +1,30 @@
+{
+  "name": "leonardothibes-vim",
+  "version": "1.0.2",
+  "source": "git://github.com/leonardothibes/puppet-vim.git",
+  "author": "leonardothibes",
+  "license": "MIT",
+  "summary": "Manage Vim via Puppet",
+  "description": "Manage Vim via Puppet",
+  "project_page": "http://github.com/leonardothibes/puppet-vim",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "804898ce1a0a7f99147503c77dbc7121",
+    "LICENSE": "d143e4bd53eb50f976ee1b80131d791e",
+    "Modulefile": "08d9ef06658f31c21619b21ea21e61bf",
+    "README.md": "799ec119a617ba2324c6872940055e11",
+    "Vagrantfile": "2d2aec7bd5a92ffed64392bf6e78da61",
+    "manifests/dependencies.pp": "25e7ee0330674eb9abc050133ff3424d",
+    "manifests/init.pp": "70db756f1e013997b06b16ae08b96cda",
+    "manifests/params.pp": "c6042db9ca6c897e6b0f715d6fe04e49",
+    "manifests/plugins.pp": "c609d47c8c32ade744b9519756e6e746",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/vimrc.local.erb": "9f91cddbae892f4b3edf97b1c3d8f98e",
+    "tests/init.pp": "9f10032fcca8bf76cf4b7cd980757957"
+  }
+}

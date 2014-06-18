@@ -1,0 +1,6 @@
+set encoding=<%=@encoding%>
+set fileencodings=<%=@encoding%>
+set tabstop=<%=@tabstop%>
+<% @opt_misc.each do |opt| -%>
+set <%=opt%>
+<% end -%>

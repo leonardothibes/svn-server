@@ -1,0 +1,15 @@
+2014-03-12 Leonardo Thibes <eu@leonardothibes.com> - 1.0.2
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Adicionar o pacote vim na instalação do dependencies.pp #8
+
+2013-12-13 Leonardo Thibes <eu@leonardothibes.com> - 1.0.1
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (5):
+  * Implementando a instalação de plugins
+  * Implementando a parametrização da classe
+  * Implementando validação de S.O. para recusar tudo o que não for Debian/Ubuntu
+  * Separando licença em um arquivo a parte
+  * Incluindo exemplos de uso ao README.md
