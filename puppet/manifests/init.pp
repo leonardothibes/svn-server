@@ -1,43 +1,30 @@
 ##
  # Development environment provided by external modules of Puppet Forge.
 ##
-class configure
+class external
 {
 	class {'env':
-		link_in_home => ['www=/www'],
+		link_in_home => ['svn=/var/lib/usvn'],
 		dirs_in_home => ['tmp'],
 	}
     class {'vim':
         tabstop  => 4,
         opt_misc => ['number','nowrap'],
     }
-	class {'php':
-		modules => ['apc','memcache','memcached','mssql','gd','imagick'],
+	class {'usvn':
+		dbname  => 'usvn',
+		dbuser  => 'usvn',
+		dbpass  => 'usvn',
+		baseurl => '/repos',
 	}
-	class {'zf':
-		version => 1,
-	}
-    class {'apache':
-        default_mods  => true,
-        default_vhost => false,
-        mpm_module    => 'prefork',
-    }   
-    apache::mod {'php5':}
-    apache::mod {'rewrite':}
 }
 
 ##
  # Development environment provided by local modules.
 ##
-class pre_configure
+class local
 {
-    include wwwdirs
-}
-class post_configure
-{
-	include prefork
-	include vhosts
 }
 
 # Executing the Puppet configuration
-class {['pre_configure','configure','post_configure']:}
+class {['external']:}
