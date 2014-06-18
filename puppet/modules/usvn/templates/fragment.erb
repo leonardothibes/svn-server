@@ -1,0 +1,11 @@
+<Location <%=baseurl%>>
+    ErrorDocument 404 default
+    DAV svn
+    Require valid-user
+    SVNParentPath <%=svnpath%>/svn
+    SVNListParentPath off
+    AuthType Basic
+    AuthName "USVN"
+    AuthUserFile <%=svnpath%>/htpasswd
+    AuthzSVNAccessFile <%=svnpath%>/authz
+</Location>
