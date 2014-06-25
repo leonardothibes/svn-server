@@ -1,5 +1,9 @@
 class backup
 {
+	$svndir = '/var/lib/usvn/svn'
+	$bkpdir = '/var/lib/backups'
+	$bucket = 'telesena-svn-backups'
+
 	File {
 		owner => root,
 		group => root,
@@ -11,14 +15,14 @@ class backup
 		target => '/root',
 	}
 
-	$bkpdir = '/var/lib/backup-scripts'
 	file {'backup::directory':
 		ensure => directory,
 		path   => $bkpdir,
 	}
 
 	file {'backup::script':
-		ensure => present,
-		path   => "${bkpdir}/bkp-svn.sh",
+		ensure  => present,
+		path    => "${bkpdir}/bkp-svn.sh",
+		content => template('backup/bkp-svn.sh.erb'),
 	}
 }
