@@ -4,6 +4,9 @@ main   : help
 install: .clear .permission .scripts
 	@puppet apply --modulepath '/etc/puppet/modules:./puppet/modules' ./puppet/manifests/init.pp
 
+backup: .clear .permission
+	@sh ./puppet/modules/backup/templates/bkp-svn.sh.erb
+
 .permission:
 	@if [ ${ID} != 0 ]; then \
 		echo "Access denied: root permission is required!"; \
@@ -27,6 +30,7 @@ help: .clear
 	@echo "Usage: make [options]"
 	@echo ""
 	@echo "  install          Executa a instalacao do servidor."
+	@echo "  backup           Inicia manualmente o processo de backup no S3."
 	@echo "  clean            Limpa arquivos temporarios."
 	@echo "  help             Exibe esta mensagem de HELP."
 	@echo ""
