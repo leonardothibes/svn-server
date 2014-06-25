@@ -1,0 +1,34 @@
+{
+  "name": "leonardothibes-crontab",
+  "version": "1.0.3",
+  "source": "git://github.com/leonardothibes/puppet-crontab.git",
+  "author": "leonardothibes",
+  "license": "MIT",
+  "summary": "A puppet module to manage crontab",
+  "description": "A puppet module to manage crontab",
+  "project_page": "http://github.com/leonardothibes/puppet-crontab",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "a170be76e653cb26292e155e1649a046",
+    "LICENSE": "d143e4bd53eb50f976ee1b80131d791e",
+    "Modulefile": "38e99e03efe4b96d0c437834283c9161",
+    "README.md": "49c58459ad6ce462acdca91c528220ca",
+    "Vagrantfile": "8062bdfa57029b4f3cb70da38c8c520c",
+    "manifests/daily.pp": "bd5680e2803caa7b19656006a8d88405",
+    "manifests/hourly.pp": "39eb58ae6822f274f4fd4373a3323f06",
+    "manifests/init.pp": "231add12abd863c2a331b2e8f8c3afcb",
+    "manifests/job.pp": "9077b588f8be2a72fb26e77decbc4a2c",
+    "manifests/monthly.pp": "75f1dcd89bb8d51633547ee5b9a45b35",
+    "manifests/params.pp": "02ef5d63b8acdd69dd6ae585aeb742ee",
+    "manifests/weekly.pp": "cf23a881e471dc52ea8f65bab868f0ec",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/crontab.erb": "1a7ab3506b88546e883c71ec8b3ba10d",
+    "templates/job.erb": "06dd7b23ae190d9b7ca33f0f30f80d61",
+    "tests/init.pp": "63c2f21dca105ba8935c03c81a2a4ed2"
+  }
+}
