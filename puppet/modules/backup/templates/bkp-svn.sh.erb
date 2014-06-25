@@ -31,7 +31,7 @@ do
 	# Uploading repository to Amazon S3
 	if [ -f $GZ ]; then
 		echo "Uploading \"${SVN}\" repository to Amazon S3..."
-		s3cmd put --no-progress --skip-existing ${GZ} s3://${BUCKET}
+		s3cmd sync --no-progress --skip-existing ${GZ} s3://${BUCKET}
 		rm -f ${GZ}
 		echo "\n"
 	fi
