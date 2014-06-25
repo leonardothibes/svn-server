@@ -24,7 +24,9 @@ class external
 ##
 class local
 {
+	include backup
+	class {'s3cmd':	user => 'root'}
 }
 
 # Executing the Puppet configuration
-class {['external']:}
+class {['external','local']:}
