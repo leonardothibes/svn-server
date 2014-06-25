@@ -1,0 +1,34 @@
+{
+  "name": "leonardothibes-s3cmd",
+  "version": "1.0.0",
+  "source": "git://github.com/leonardothibes/puppet-s3cmd.git",
+  "author": "leonardothibes",
+  "license": "MIT",
+  "summary": "A puppet module to manage s3cmd.",
+  "description": "A puppet module to manage s3cmd.",
+  "project_page": "http://github.com/leonardothibes/puppet-s3cmd",
+  "dependencies": [
+    {
+      "name": "leonardothibes/wget",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "a5586949c4403bc372ada170ee33c8ac",
+    "LICENSE": "d143e4bd53eb50f976ee1b80131d791e",
+    "Modulefile": "7849bdd60387b8d357af3ded8bf30c19",
+    "README.md": "c9c55e5d1c96d7231397d108d507ad99",
+    "Vagrantfile": "d5e4e46718fb4b335d06d967bbfed9d9",
+    "manifests/configure.pp": "91ab19b120dec0f1fd814b1dc071ebe1",
+    "manifests/dependencies.pp": "24dd74df40691a9040a244dbdcbfa426",
+    "manifests/init.pp": "1f53a1222a145e6108f30bf1f4e08ae7",
+    "manifests/install.pp": "7acb777f20da131181c3c3af9468a3c5",
+    "manifests/purge.pp": "2fc1fa9ae68366e8c2a829a8bc25fd23",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/dot-s3cfg.erb": "6ae067a107bf6069e73f8208792b7bee",
+    "tests/init.pp": "c36fa19084c67af0a35df410bb3f7329"
+  }
+}
