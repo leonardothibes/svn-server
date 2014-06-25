@@ -3,7 +3,6 @@
 if [ -f /usr/bin/apt-get ]; then
     # Instalando o Puppet em Debian/Ubuntu.
     if [ ! -f /usr/bin/puppet ]; then
-            apt-get update
             apt-get install -y puppet
     fi  
     # Instalando o Puppet em Debian/Ubuntu.
