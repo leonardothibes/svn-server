@@ -1,3 +1,42 @@
 #!/bin/bash
 
-echo "Fazendo backup no S3..."
+DATE=`date +%Y-%m-%d`
+FROM=<%=@svndir%>
+TO=<%=@bkpdir%>
+BUCKET=<%=@bucket%>
+
+echo "Start backup process in `date +"%Y/%m/%d %H:%M:%S"`\n"
+
+for SVN in `ls $FROM`
+do
+	# Paths
+	REPO=${FROM}/${SVN}
+	DUMP=${TO}/${SVN}_${DATE}.svndump
+	GZ="${DUMP}.gz"
+
+	# Executing repository dump
+	if [ ! -f $DUMP ] && [ ! -f "${DUMP}.gz" ]; then
+		echo "Dumping \"${SVN}\" repository..."
+		svnadmin dump $REPO > $DUMP
+	fi
+	# Executing repository dump
+
+	# Gzipping repository dump
+	if [ -f $DUMP ]; then
+		echo "Gzipping \"${SVN}\" repository dump..."
+		gzip $DUMP
+	fi
+	# Gzipping repository dump
+
+	# Uploading repository to Amazon S3
+	if [ -f $GZ ]; then
+		echo "Uploading \"${SVN}\" repository to Amazon S3..."
+		s3cmd put ${GZ} s3://${BUCKET}
+		rm -f ${GZ}
+		echo "\n"
+	fi
+	# Uploading repository to Amazon S3
+
+done
+
+echo "End backup process in `date +"%Y/%m/%d %H:%M:%S"`"
