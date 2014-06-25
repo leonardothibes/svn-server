@@ -5,7 +5,7 @@ install: .clear .permission .scripts
 	@puppet apply --modulepath '/etc/puppet/modules:./puppet/modules' ./puppet/manifests/init.pp
 
 backup: .clear .permission
-	@sh ./puppet/modules/backup/templates/bkp-svn.sh.erb
+	@sh /var/lib/backups/bkp-svn.sh
 
 .permission:
 	@if [ ${ID} != 0 ]; then \
